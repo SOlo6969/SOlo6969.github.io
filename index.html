@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Query</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="query-box">
+
+            <div class="site-logo">
+                <img src="wave.png">
+            </div>    
+
+            <h1 >OceanShip Brokers</h1>
+            <form>
+                <label  for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label  for="number">Number:</label>
+                <input type="tel" id="number" name="number" required>
+
+                <label for="quantity">Delivery Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required>
+
+                <div class="unit-toggle">
+                    <label class="font" for="unit">Unit:</label>
+                    <select id="unit" name="unit">
+                        <option value="tonnes">Tonnes</option>
+                        <option value="kilos">Kilograms</option>
+                    </select>
+                </div>
+
+                <label for="delivery-date">Approximate Delivery Date:</label>
+                <input type="date" id="delivery-date" name="delivery-date" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="contact-box">
+            <h2>Contact Me</h2>
+            <p>Mobile: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p>Skype: <a href="skype:your_skype_username?call">your_skype_username</a></p>
+            <p>Email: <a href="mailto: name@email.com">your_email</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
